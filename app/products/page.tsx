@@ -21,10 +21,10 @@ export default async function Products () {
               
             </h3>
             {category.map((category: Project) => (
-              <div key={category._id}
+              <div key={category?._id ? category._id : "no id"}
                 className="select-none cursor-pointer capitalize font-normal"
               >
-                <span>{category.title}</span>
+                <span>{category?.title ? category.title : "no category"}</span>
               </div>
             ))}
           </div>

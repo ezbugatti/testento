@@ -5,8 +5,8 @@ import Link from "next/link";
 const SingleProduct = ({ product }: any) => {
 
   return (
-    <Link key={product._id}
-          href={`/product/${product.slug}`}
+    <Link key={product?._id ? product._id : "no id"}
+          href={`/product/${product?.slug ? product.slug : "no slug"}`}
           className="hover:text-rose-50 text-gray-900 duration-300 flex justify-between items-center"
         >
     <div className="single-product flex flex-col bg-gray-50 gap-3 shadow-md hover:shadow-xl hover:scale-105 duration-300 px-4 py-7 rounded-sm overflow-hidden">

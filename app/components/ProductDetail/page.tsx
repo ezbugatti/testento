@@ -26,10 +26,10 @@ export default async function ProductDetail ({products} : any) {
               <span className="font-semibold">Ангилал</span>
             </h3>
 
-              <div key={products._id}
+              <div key={products?._id ? products._id : "no id"}
                 className="select-none cursor-pointer capitalize font-semibold"
               >
-                <span>{products.categories}</span>
+                <span>{products?.categories ? products.categories : "no categories"}</span>
               </div>
         
           </div>

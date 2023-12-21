@@ -1,5 +1,6 @@
 import Link from "next/link";
 import moment from "moment";
+import 'moment/locale/mn';
 import Image from "next/image";
 import React from "react";
 import { urlFor } from "@/app/getUrlFor";
@@ -134,7 +135,9 @@ const posts = await getProjects();
                             z-0="true"
                             className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                           >
-                            {moment(post?.publishedAt ? post.publishedAt : 'Not published').subtract(10, "days").calendar()}
+                            
+                           
+                            {moment (post?.publishedAt ? post.publishedAt : 'Not published').subtract(10, "days").calendar()}
                           </div>
                         </div>
                         <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
