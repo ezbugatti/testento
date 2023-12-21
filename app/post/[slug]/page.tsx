@@ -9,6 +9,9 @@ type Props = {
     params : {slug: string};
 }
 
+
+
+
 export default async function Slugs({params} : Props ) {
    const slug = params.slug;
     const post = await getProject(slug)

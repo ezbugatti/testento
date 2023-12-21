@@ -12,7 +12,10 @@ export type Project = {
     authorName: string;
     picture: string;
     authorImage: string;
+    authorBio: string;
     featuredText: string;
     body: string;
     content: PortableTextBlock[];
+    categories: string;
+    category: string;
 };

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 
 import { useState } from "react";
@@ -11,7 +12,9 @@ export default function Video() {
 
   return (
     <div>
-      {videoLoaded ? null : <img src="/about-hero.jpg" alt="Loading" />}
+      {videoLoaded ? null : (
+        <Image width={2000} height={2000} src="/about-hero.jpg" alt="Loading" />
+      )}
 
       <video
         autoPlay

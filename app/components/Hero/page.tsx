@@ -8,7 +8,7 @@ const Hero = () => {
 
         <div className="site-hero_img">
         
-          <Image width={2000} height={1400} src="/about-hero.jpg" className='w-full shadow-2xl ' alt="about" />
+          <Image width={2000} height={1400} src="/about-hero.jpg" className='w-full shadow-2xl' alt="about" />
          
         </div>
       </div>

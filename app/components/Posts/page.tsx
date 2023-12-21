@@ -1,11 +1,23 @@
 import React from "react";
 import moment from "moment";
 import { client } from "@/sanity/lib/client";
-import { urlFor } from "../../getUrlFor";
+
 import Image from "next/image";
 import Link from "next/link";
 import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
+const components = {
+  types: {
+    code: (props: any) => (
+      <pre data-language={props.node.language}>
+        <code> {props.node.code}</code>
+    
+      </pre>
+      
+    )
+  }
+}
+
 
 const builder = imageUrlBuilder(client);
 export default function Posts({post}: any) {
@@ -43,11 +55,13 @@ export default function Posts({post}: any) {
       </div>
       <div className="py-6">
 
+    <PortableText value={post?.body ? post.body : 'No body'} components={components}/>
+
       </div>
     </div>
 
     <div className="text-base md:text-sm text-gray-500 px-4 py-6">
-      Категори:{" "}
+      Категори: {post?.categories ? post.categories : " no category"}
       <Link
         href="#"
         className="text-base md:text-sm text-green-500 no-underline hover:underline"
@@ -57,7 +71,7 @@ export default function Posts({post}: any) {
         href="#"
         className="text-base md:text-sm text-green-500 no-underline hover:underline"
       >
-        Link
+        
       </Link>
     </div>
 
@@ -101,7 +115,7 @@ export default function Posts({post}: any) {
          {post?.authorName ? post.authorName : "No name"}
         </div>
         <div className="text-gray-600 text-xs md:text-base">
-          {/* {post.author.bio} */}
+          {post?.authorBio ? post.authorBio : 'No Bio'}
         </div>
       </div>
     </div>

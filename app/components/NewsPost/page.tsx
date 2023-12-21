@@ -1,16 +1,15 @@
 import Link from "next/link";
 import moment from "moment";
-
-
-
+import Image from "next/image";
 import React from "react";
 import { urlFor } from "@/app/getUrlFor";
 import { Project } from "@/types/Project";
+import { getProjects } from "@/sanity/sanity-utils";
 
 
 
-export default function NewsPost({ posts }: any) {
-  moment.locale("mn");
+export default async function NewsPost() {
+const posts = await getProjects();
   return (
     <div>
       <div id="blog" className="bg-gray-100 px-4 xl:px-4 py-14">
@@ -105,21 +104,22 @@ export default function NewsPost({ posts }: any) {
               </div>
               <div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
-                  {posts.map((post : Project) => (
-                    <Link key={post._id} href={`/${post.slug}`}>
+                  {posts?.map((post : Project) => (
+                    <Link key={post._id} href={`/post/${post.slug}`}>
                       <div
                         z-0="true"
                         className="focus:outline-none cursor-pointer relative overflow-hidden "
                         aria-label="card 2"
                       >
-                        {post.image && (
-                        <img
-                          z-0="true"
-                          role="img"
+                        {post?.image && (
+                        <Image
+  
                           aria-label="gaming"
                           className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full"
-                          src={urlFor(post.image).height(400).url()}
-                          alt="games"
+                          src={urlFor(post.image).height(400).url
+                          ()}
+                          width={600} height={400}
+                          alt={post.name}
                         />
                         )
                         }

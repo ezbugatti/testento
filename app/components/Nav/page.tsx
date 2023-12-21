@@ -81,7 +81,7 @@ const Nav = () => {
 
             <Link
               className="inline-block py-2 px-6 text-gray-900 hover:text-green-700 hover-underline-animation uppercase"
-              href="/brand"
+              href="/products"
               >Бренд бүтээгдэхүүн
               </Link>
             
