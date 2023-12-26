@@ -1,3 +1,4 @@
+"use client"
 import saveAs from "file-saver";
 import React from "react";
 import Image from "next/image";

@@ -28,10 +28,10 @@ export default function ProductTabs({products}: any) {
     </TabList>
 
     <TabPanel>
-      <h2>{products.useZaalt}</h2>
+      <h2>{products?.useZaalt ? products.useZaalt : "no desc"}</h2>
     </TabPanel>
     <TabPanel>
-      <h2>{products.useTitle}</h2>
+      <h2>{products?.useTitle ? products.useTitle : "no title"}</h2>
     </TabPanel>
  
   </Tabs>
