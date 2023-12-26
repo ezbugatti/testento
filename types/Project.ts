@@ -18,4 +18,6 @@ export type Project = {
     content: PortableTextBlock[];
     categories: string;
     category: string;
+    useTitle: string;
+    useZaalt: string;
 };

@@ -40,6 +40,16 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'useTitle',
+      title: 'use Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'useZaalt',
+      title: 'use Zaalt',
+      type: 'string',
+    }),
+    defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',

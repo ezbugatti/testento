@@ -7,15 +7,15 @@ const Zaxiral = () => {
         <div className="flex">
           <div className="w-auto lg:hidden">
             <h2
-              className="flex text-gray-900 font-primary uppercase justify-center text-2xl"
+              className="flex text-gray-900 font-primary uppercase justify-center text-xl"
             >
               захирлын мэндчилгээ
             </h2>
-            <div className="w-auto items-center">
+            <div className="w-auto mt-4 items-center">
               <Image
                 src="/zaxiral.jpg"
-                height={100} // Desired size with correct aspect ratio
-                width={100}
+                height={200} // Desired size with correct aspect ratio
+                width={400}
                 className="transform rounded-md ml-6"
                 alt="zaxiral"
               />
@@ -73,9 +73,11 @@ const Zaxiral = () => {
           </div>
 
           <div className="w-2/4 hidden lg:block">
-            <img
-              src="zaxiral.jpg"
-              className="transform rounded-2xl ml-6"
+            <Image
+            width={600}
+            height={400}
+              src="/zaxiral.jpg"
+              className="transform rounded-2xl ml-28"
               alt="zaxiral"
             />
           </div>

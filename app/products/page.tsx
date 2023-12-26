@@ -4,8 +4,8 @@ import {getCategories, getProducts } from "@/sanity/sanity-utils";
 import SingleProduct from "../components/SingleProduct/page";
 import {Project} from "@/types/Project";
 
-
 export default async function Products () {
+
   const products = await getProducts(); 
   const category = await getCategories();
   return (
@@ -24,7 +24,7 @@ export default async function Products () {
               <div key={category?._id ? category._id : "no id"}
                 className="select-none cursor-pointer capitalize font-normal"
               >
-                <span>{category?.title ? category.title : "no category"}</span>
+                <div>{category?.title ? category.title : "no category"}</div>
               </div>
             ))}
           </div>

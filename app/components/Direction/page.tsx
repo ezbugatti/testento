@@ -4,7 +4,7 @@ const Direction = () => {
   return (
     <div className="news-section">
       <div className="pt-20 pb-12 px-10">
-        <div className="section-title text-2xl text-bold text-center uppercase">
+        <div className="section-title text-gray-800 text-2xl text-bold text-center uppercase">
           <span>Үйл ажиллагаа</span>
           
         </div>
@@ -26,12 +26,12 @@ const Direction = () => {
 
             <div z-0="true" className="news-section__news-card">
             <div z-0="true" role="img" className="news-section__news-card-imageWrapper focus:outline-none cursor-pointer relative overflow-hidden">
-                                            <Image  height={500} // Desired size with correct aspect ratio
-                width={500} z-0="true" role="img" aria-label="gaming" className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full" src="/medee1.jpg" alt="games" />
+                                            <Image  height={600} // Desired size with correct aspect ratio
+                width={400} aria-label="gaming" className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full" src="/pharma.jpg" alt="games" />
                                            
                 <div className="news-section__news-card-text">
                 <div className="news-section__featured-card-title">
-                  Storie / Ambassadors
+                  ЭНТО ФАРМ
                 </div>
                
                 <a href="#" className="readmore group">
@@ -47,12 +47,12 @@ const Direction = () => {
                                         </div>
                                         <div z-0="true" className="news-section__news-card">
             <div z-0="true" role="img" className="news-section__news-card-imageWrapper focus:outline-none cursor-pointer relative overflow-hidden">
-                                            <Image height={500} // Desired size with correct aspect ratio
-                width={500}  z-0="true" role="img" aria-label="gaming" className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full" src="/medee1.jpg" alt="games" />
+                                            <Image height={800} 
+                width={400}  z-0="true" role="img" aria-label="gaming" className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full" src="/tonog.jpg" alt="games" />
                                            
                 <div className="news-section__news-card-text">
                 <div className="news-section__featured-card-title">
-                  Storie / Ambassadors
+                  ЭНТО МЕД
                 </div>
                
                 <a href="#" className="readmore group">
@@ -76,7 +76,7 @@ const Direction = () => {
                                            
                 <div className="news-section__news-card-text">
                 <div className="news-section__featured-card-title">
-                  Storie / Ambassadors
+                  ЭНТО ЭМЧ
                 </div>
                
                 <a href="#" className="readmore group">

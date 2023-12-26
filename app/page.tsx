@@ -22,7 +22,7 @@ export default async function Home() {
         <Stat />
         <div className="news-section">
           <div className="pt-20 pb-8 px-4">
-            <div className="section-title text-2xl text-bold text-center uppercase mb-6">
+            <div className="section-title text-gray-800 text-2xl text-bold text-center uppercase mb-6">
               <span>Мэдээ мэдээлэл</span>
             </div>
 

@@ -118,7 +118,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700 ">
           <div className="cursor-pointer px-8 py-6">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">1</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon1.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon1.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2">Ажлын байр зарлах</p>
             <p>Та манай ажлын байрны мэдээллийг “АЖЛЫН БАЙР” цэснээс авна уу!</p>
           </div>
@@ -126,7 +126,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700">
           <div className=" cursor-pointer px-8 py-6 ">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">2</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon2.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon2.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2">АНКЕТ ХҮЛЭЭН АВАХ</p>
             <p>Та манай ажлын байрны мэдээллийг “АЖЛЫН БАЙР” цэснээс авна уу!</p>
           </div>
@@ -134,7 +134,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700">
           <div className=" cursor-pointer px-8 py-6">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">3</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon3.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon3.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2">АНКЕТЫН ШАЛГАРУУЛАЛТ</p>
             <p>Та манай ажлын байрны мэдээллийг “АЖЛЫН БАЙР” цэснээс авна уу!</p>
           </div>
@@ -142,7 +142,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700" >
           <div className="cursor-pointer px-8 py-6 ">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">4</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon4.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon4.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2 ">АНХАН ШАТНЫ ЯРИЛЦЛАГА</p>
             <p>Та манай ажлын байрны мэдээллийг “АЖЛЫН БАЙР” цэснээс авна уу!</p>
           </div>
@@ -150,7 +150,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700">
           <div className="cursor-pointer px-8 py-6 ">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">5</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon6.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon6.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2">ХОЁРДУГААР ШАТНЫ ЯРИЛЦЛАГА</p>
             <p>Та манай ажлын байрны мэдээллийг “АЖЛЫН БАЙР” цэснээс авна уу!</p>
           </div>
@@ -158,7 +158,7 @@ const hr = () => {
         <div className="w-full transform hover:-translate-y-5 transition-all duration-700">
           <div className="cursor-pointer px-8 py-6 ">
             <span className="font-bold text-dark bg-gray-300 rounded-3xl py-2 px-3">6</span>
-            <img src="https://www.monos.mn/assets/busad/hr-icon7.gif" className="h-96 w-auto object-fill fill-current" alt="" />
+            <Image width={400} height={400} src="https://www.monos.mn/assets/busad/hr-icon7.gif" className="h-96 w-auto object-fill fill-current" alt="" />
             <p className="text-dark text-lg font-bold my-2">ХӨДӨЛМӨРИЙН ГЭРЭЭ ХИЙХ</p>
             <p>Шалгаруулалтад тэнцэж, шаардлага хангасан ажил горилогчид ажлын санал тавих, гэрээ хийх</p>
           </div>

@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import ProductTabs from "./tabs";
+
 const components = {
     types: {
       code: (props: any) => (
@@ -55,10 +57,13 @@ export default async function ProductDetail ({products} : any) {
       </p>
     </div>
     <div className="single-product flex flex-col bg-gray-50 gap-3 px-4 py-7 rounded-sm overflow-hidden">
-      <div className="flex justify-center">
-        <p className="font-medium">Тайлбар</p>
-      </div>
-      <PortableText value={products?.body ? products.body : 'No body'} components={components}/>
+      
+      
+      <ProductTabs products={products}/>
+
+
+      {/* <PortableText value={products?.body ? products.body : 'No body'} components={components}/> */}
+
     </div>
             </div>
           

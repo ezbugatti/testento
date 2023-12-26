@@ -34,12 +34,14 @@ const posts = await getProjects();
                 className="focus:outline-none cursor-pointer relative overflow-hidden"
                 aria-label="card 1"
               >
-                <img
+                <Image
+                width={600}
+                height={400}
                   role="img"
                   aria-label="code editor"
                   z-0="true"
                   className="transition-all object-cover  transform ease-in-out hover:scale-105 duration-700 focus:outline-none w-full"
-                  src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png"
+                  src="/medee1.jpg"
                   alt="code editor"
                 />
                 <div className="py-4 px-8 w-full flex justify-between bg-teal-700">

@@ -54,6 +54,7 @@ export async function getProject(slug: string): Promise<Project> {
                 "authorImage": author->image.asset->url,
                 "authorBio" : author->bio[0].children[0].text,
                 "categories": categories[]->title,
+         
         }`,
         { slug }
         
@@ -81,6 +82,8 @@ export async function getProducts(): Promise<Project[]> {
                 featuredText,
                 category,
                 "categories": categories[]->title,
+                useTitle,
+                useZaalt
         }`
         
     )
@@ -104,6 +107,8 @@ export async function getProduct(slug: string):Promise<Project[]> {
                 "image": mainImage.asset->url,
                 featuredText,
                 "categories": categories[]->title,
+                useTitle,
+                useZaalt
                 // "categories": categories[]->,
                 // "categoriesName": categories[]->title,
         }`,

@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-
+import Image from "next/image";
 
 import SaveAs from "../SaveAs/page";
 import Zaxiral from "../Zaxiral/page";
@@ -34,7 +34,7 @@ const Tabs = () => {
     {
       label: "Бүтэц зохион байгуулалт",
       content: (
-        <img className="flex rounded-2xl ml-24 " src="organ.jpg" alt="s" />
+        <Image width={600} height={300}  className="flex rounded-2xl ml-24 " src="/butets.png" alt="s" />
       ),
     },
     {
@@ -52,7 +52,7 @@ const Tabs = () => {
             type="button"
             className={` md:w-full px-8 py-4 font-normal text-left ${
               index === activeTab
-                ? "text-white bg-teal-500 border border-gray-200 rounded-t-lg"
+                ? "font-bold text-gray-950 bg-teal-500 border border-gray-200 rounded-t-lg"
                 : "text-gray-900 bg-white border-b border-gray-200"
             } cursor-pointer focus:outline-none `}
             onClick={() => setActiveTab(index)}
