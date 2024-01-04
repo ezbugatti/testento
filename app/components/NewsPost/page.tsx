@@ -138,8 +138,8 @@ const posts = await getProjects();
                             className="focus:outline-none text-sm text-white font-semibold tracking-wide"
                           >
                             
-                           
-                            {moment (post?.publishedAt ? post.publishedAt : 'Not published').subtract(10, "days").calendar()}
+                           {new Date(post?.publishedAt).toDateString()}
+
                           </div>
                         </div>
                         <div className="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">

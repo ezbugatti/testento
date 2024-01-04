@@ -38,7 +38,8 @@ export default function Posts({post}: any) {
           {post?.title ? post.title : "No Title"}
         </h1>
         <div className="text-sm md:text-base font-normal text-gray-600">
-          {moment(post?.publishedAt ? post.publishedAt : 'Not published').subtract(1, "days").calendar()}
+        {new Date(post?.publishedAt).toDateString()}
+
         </div>
       </div>
       <div className="w-full hidden lg:block">
@@ -53,9 +54,8 @@ export default function Posts({post}: any) {
       ) : null}
 
       </div>
-      <div className="py-6">
-
-    <PortableText value={post?.body ? post.body : 'No body'} components={components}/>
+      <div className="py-6 text-justify max-w-2xl m-auto ">
+    <PortableText value={post?.body ? post.body : 'No body'} components={myPortableTextComponents}/>
 
       </div>
     </div>
@@ -155,4 +155,10 @@ export default function Posts({post}: any) {
     </div>
   </div>
   );
+}
+
+const myPortableTextComponents = {
+types: {
+  image: ({value}: any) => <Image alt="image" width={500} height={800} src={builder.image(value).url()} />,
+},
 }

@@ -23,7 +23,7 @@ const Nav = () => {
       >
         <div className="flex flex-row items-center flex-shrink-0 text-gray">
           <Link href="/"> 
-          <Image width={200} height={200} src="/logo.png" alt="HTML tutorial" /></Link>
+          <Image width={150} height={50} src="/logo.png" alt="HTML tutorial" /></Link>
           
         </div>
        
@@ -50,30 +50,30 @@ const Nav = () => {
   </Link>
 
   <ul className="absolute hidden text-gray-700 pt-1 group-hover:block z-10">
-    <li className="">
-      <Link
-        className="rounded-t bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-        href="/ehnt"
-      >
-        Эм ханган нийлүүлэх
-      </Link>
-    </li>
-    <li className="">
-      <Link
-        className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-        href="/pharmacy"
-      >
-       Эмийн сан
-      </Link>
-    </li>
-    <li className="">
-      <Link
-        className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-        href="/tender"
-      >
-       Эмнэлгийн тоног төхөөрөмж
-      </Link>
-    </li>
+  <li className="">
+    <Link
+      className="rounded-t bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+      href="/pharmacy"
+    >
+      "ЭНТО ФАРМ" ХХК
+    </Link>
+  </li>
+  <li className="">
+    <Link
+      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+      href="/med"
+    >
+     "ЭНТО МЕД" ХХК
+    </Link>
+  </li>
+  <li className="">
+    <Link
+      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+      href="/ehnt"
+    >
+     ЭМ ХАНГАН НИЙЛҮҮЛЭХ ТӨВ
+    </Link>
+  </li>
     
   </ul>
   </div>
@@ -167,7 +167,7 @@ const Nav = () => {
     ) : ( 
 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
       fill="#1A1A1A" >
-      <g fill="#0d9488" fillRule="nonzero" stroke="none" strokeWidth="1" stroke-linecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+      <g fill="#0d9488" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
       </svg>
 
 
@@ -202,27 +202,28 @@ const Nav = () => {
   <li className="">
     <Link
       className="rounded-t bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-      href="/ehnt"
-    >
-      Эм ханган нийлүүлэх
-    </Link>
-  </li>
-  <li className="">
-    <Link
-      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
       href="/pharmacy"
     >
-     Эмийн сан
+      "ЭНТО ФАРМ" ХХК
     </Link>
   </li>
   <li className="">
     <Link
       className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-      href="/tender"
+      href="/med"
     >
-     Эмнэлгийн тоног төхөөрөмж
+     "ЭНТО МЕД" ХХК
     </Link>
   </li>
+  <li className="">
+    <Link
+      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+      href="/ehnt"
+    >
+     ЭМ ХАНГАН НИЙЛҮҮЛЭХ ТӨВ
+    </Link>
+  </li>
+
   
 </ul>
 </div>

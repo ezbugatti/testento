@@ -35,7 +35,8 @@ export default function section({post}: any) {
             z-0="true"
             className="focus:outline-none text-sm text-white font-semibold tracking-wide"
           >
-            {moment(post?.publishedAt ? post.publishedAt : 'Not published').subtract(10, "days").calendar()}
+            {new Date(post?.publishedAt).toDateString()}
+
           </div>
         </div>
         <div className="news-section__news-card-text">
@@ -43,7 +44,7 @@ export default function section({post}: any) {
           <div className="news-section__news-card-title card-title">
             {post?.featuredText ? post.featuredText : 'no feature' }
           </div>
-          <Link href="#" className="readmore group">
+          <div className="readmore group">
             <span className="readmores">
               <svg
                 className="w-6 h-6"
@@ -62,7 +63,7 @@ export default function section({post}: any) {
             </span>
             <span className="readmorespan ease">Цааш унших...</span>
             <span className="relative invisible ease">Цааш унших...</span>
-          </Link>
+          </div>
         </div>
       </div>
     </div>

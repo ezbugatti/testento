@@ -13,7 +13,7 @@ const hrBodlogo = () => {
             </h2>
             <div className="w-auto items-center mt-4">
             <Image width={800} height={600}
-                src="hrb.jpg"
+                src="/hrb.jpg"
                 className="transform rounded-md ml-6"
                 alt="hr"
               />
@@ -41,8 +41,8 @@ const hrBodlogo = () => {
           </div>
 
           <div className="w-2/4 hidden md:block">
-            <Image width={800} height={600}
-              src="hrb.jpg"
+            <Image width={1200} height={600}
+              src="/hrb.jpg"
               className="w-full items-center transform rounded-2xl ml-6"
               alt="hr"
             />

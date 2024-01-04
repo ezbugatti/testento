@@ -38,7 +38,7 @@ export default async function Home() {
 
           <div className="news-section__cards">
             <div  className="news-section__news-cards md:flex md:flex-1 md:grid-cols-1 w-full gap-6  px-6 ">
-              {posts.map((post : Project) => (
+              {posts?.slice(-3).map((post : Project) => (
           
                 <Link key={post._id} href={`/post/${post.slug}`}>
                        <Section post={post} />
