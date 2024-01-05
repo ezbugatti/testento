@@ -1,8 +1,10 @@
 
 import Link from "next/link";
-import {getCategories, getProducts } from "@/sanity/sanity-utils";
+import {getCategories, getProducts,} from "@/sanity/sanity-utils";
 import SingleProduct from "../components/SingleProduct/page";
 import {Project} from "@/types/Project";
+
+
 
 export default async function Products () {
 

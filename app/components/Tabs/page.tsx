@@ -34,7 +34,7 @@ const Tabs = () => {
     {
       label: "Бүтэц зохион байгуулалт",
       content: (
-        <Image width={600} height={300}  className="flex rounded-2xl ml-24 " src="/butets.png" alt="s" />
+        <Image width={1200} height={600}  className="flex rounded-2xl ml-24 " src="/entobanner.png" alt="s" />
       ),
     },
     {

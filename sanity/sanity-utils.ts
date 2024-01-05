@@ -108,7 +108,11 @@ export async function getProduct(slug: string):Promise<Project[]> {
                 featuredText,
                 "categories": categories[]->title,
                 useTitle,
-                useZaalt
+                useZaalt,
+                categories[]->,
+  "related": *[_type == "post" && count(categories[@._ref in ^.^.categories[]._ref]) > 0] | order(publishedAt desc, _createdAt desc) [0..5] {
+     title,
+     slug
                 // "categories": categories[]->,
                 // "categoriesName": categories[]->title,
         }`,

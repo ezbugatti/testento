@@ -53,9 +53,18 @@ const Nav = () => {
   <li className="">
     <Link
       className="rounded-t bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+      href="/business"
+    >
+      "ЭНТО" ХХК
+    </Link>
+  </li>
+  <li className="">
+    <Link
+      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
       href="/pharmacy"
     >
       "ЭНТО ФАРМ" ХХК
+ 
     </Link>
   </li>
   <li className="">
@@ -63,15 +72,8 @@ const Nav = () => {
       className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
       href="/med"
     >
-     "ЭНТО МЕД" ХХК
-    </Link>
-  </li>
-  <li className="">
-    <Link
-      className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-      href="/ehnt"
-    >
-     ЭМ ХАНГАН НИЙЛҮҮЛЭХ ТӨВ
+     
+    "ЭНТО МЕД" ХХК
     </Link>
   </li>
     
@@ -202,17 +204,17 @@ const Nav = () => {
   <li className="">
     <Link
       className="rounded-t bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-      href="/pharmacy"
+      href="/ento"
     >
-      "ЭНТО ФАРМ" ХХК
+      "ЭНТО" ХХК
     </Link>
   </li>
   <li className="">
     <Link
       className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
-      href="/med"
+      href="/pharmacy"
     >
-     "ЭНТО МЕД" ХХК
+     "ЭНТО ФАРМ" ХХК
     </Link>
   </li>
   <li className="">
@@ -220,7 +222,7 @@ const Nav = () => {
       className="bg-gray-50 hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
       href="/ehnt"
     >
-     ЭМ ХАНГАН НИЙЛҮҮЛЭХ ТӨВ
+      "ЭНТО МЕД" ХХК
     </Link>
   </li>
 

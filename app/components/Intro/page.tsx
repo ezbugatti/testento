@@ -55,7 +55,7 @@ const Intro = () => {
           className="m-3 r"
         >
         
-          <h2 className="text-lg mb-2">ЗОРИЛГО</h2>
+          <h2 className="text-lg mb-2">ЗОРИЛТ</h2>
           <p
             className="font-medium text-sm text-gray-100 hover:text-white transition-all duration-200"
           >

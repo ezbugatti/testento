@@ -20,4 +20,5 @@ export type Project = {
     category: string;
     useTitle: string;
     useZaalt: string;
+    fetchedCategories: any;
 };
